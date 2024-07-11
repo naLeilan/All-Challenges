@@ -1,18 +1,11 @@
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import StepSlider from "./StepSlider";
+import { Link } from "react-router-dom";
 
 function AppLayout() {
   return (
-    <Router>
-      <div>
-        <Link to="/stepslider">
-          <button>Step Slider</button>
-        </Link>
-        <switch>
-          <Route path="/stepslider" component={StepSlider} />
-        </switch>
-      </div>
-    </Router>
+    <div>
+      <h2>Simple React Code Challenges</h2>
+      <Link to="/stepslider">Step Slider</Link>
+    </div>
   );
 }
 
