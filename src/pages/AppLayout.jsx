@@ -1,19 +1,19 @@
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
-import StepSlider from "./pages/StepSlider";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import StepSlider from "./StepSlider";
 
-function App() {
+function AppLayout() {
   return (
     <Router>
       <div>
         <Link to="/stepslider">
           <button>Step Slider</button>
         </Link>
-        <Routes>
+        <switch>
           <Route path="/stepslider" component={StepSlider} />
-        </Routes>
+        </switch>
       </div>
     </Router>
   );
 }
 
-export default App;
+export default AppLayout;
