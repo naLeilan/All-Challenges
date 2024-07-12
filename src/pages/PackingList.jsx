@@ -30,7 +30,7 @@ const people = [
 
 export default function DisplayList() {
   const chemists = people.filter((person) => person.profession === "chemist");
-  const list = chemists.map((l) => <li>{l.name} </li>);
+  const list = chemists.map((l) => <li key={l.id}>{l.name} </li>);
 
   return <ul>{list}</ul>;
 }

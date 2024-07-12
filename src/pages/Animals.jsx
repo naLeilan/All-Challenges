@@ -14,7 +14,7 @@ function AnimalsList() {
 function List({ animals }) {
   return (
     <>
-      {!animals && (
+      {animals && (
         <div>
           {animals.map((animal) => {
             return animal.startsWith("L") ? (
