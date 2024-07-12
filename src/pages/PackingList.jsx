@@ -1,27 +1,16 @@
 /***********nesting two different map */
-// import { recipes } from "../../public/data";
-
-// export default function RecipeList() {
-//   return (
-//     <div>
-//       <h1>Recipes</h1>
-//       {recipes.map(recipe =>
-//         <div key={recipe.id}>
-//           <h2>{recipe.name}</h2>
-//           <ul>
-//             {recipe.ingredients.map(ingredient =>
-//               <li key={ingredient}>
-//                 {ingredient}
-//               </li>
-//             )}
-//           </ul>
-//         </div>
-//       )}
-//     </div>
-//   );
-// }
-
 import { recipes } from "../../public/data";
+
+export default function RecipeList() {
+  return (
+    <div>
+      <h1>Recipes</h1>
+      {recipes.map((recipe) => (
+        <Recipe {...recipe} key={recipe.id} />
+      ))}
+    </div>
+  );
+}
 
 function Recipe({ id, name, ingredients }) {
   return (
@@ -34,19 +23,6 @@ function Recipe({ id, name, ingredients }) {
       </ul>
     </div>
   );
-}
-
-export default function RecipeList() {
-  {
-    return (
-      <div>
-        <h1>Recipes</h1>
-        {recipes.map((recipe) => (
-          <Recipe {...recipe} key={recipe.id} />
-        ))}
-      </div>
-    );
-  }
 }
 
 /************/
