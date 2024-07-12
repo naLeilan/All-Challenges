@@ -13,11 +13,17 @@ function AnimalsList() {
 
 function List({ animals }) {
   return (
-    <div>
-      {animals.map((animal) => {
-        return <ListItem animal={animal} key={animal} />;
-      })}
-    </div>
+    <>
+      {!animals && (
+        <div>
+          {animals.map((animal) => {
+            return animal.startsWith("L") ? (
+              <ListItem animal={animal} key={animal} />
+            ) : null;
+          })}
+        </div>
+      )}
+    </>
   );
 }
 
