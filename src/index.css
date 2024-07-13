@@ -47,35 +47,6 @@ body {
   justify-content: space-between;
 }
 
-.app,
-.stepslider {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--color-dark1);
-  padding: 1rem;
-}
-
-.stepslider {
-  width: 550px;
-  border-radius: 10px;
-  gap: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.stepslider-num {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.stepslider-msg {
-  font-size: 1.3rem;
-  color: var(--dark-gray);
-}
-
 h2 {
   font-family: inherit;
   color: var(--color-blue1);
@@ -93,12 +64,56 @@ a {
   /* border: 1px solid var(--color-blue2); */
 }
 
-.stepslider-btn {
+.app,
+.steps {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-dark1);
+  padding: 1rem;
+}
+/*****************/
+/*** stepslider***/
+/*****************/
+.steps {
+  width: 550px;
+  border-radius: 10px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.active {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-blue1);
+}
+
+.steps-msg {
+  font-size: 1.3rem;
+  color: var(--dark-gray);
+}
+
+.steps-btn {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
 
+/*****************/
+/*****************/
+/*****************/
 .btn {
   width: 130px;
   height: 50px;
@@ -111,4 +126,6 @@ a {
 
 .btn:hover {
   background-color: var(--color-blue3);
+  scale: 1.1;
+  /* box-shadow: inset 0px 0px 30px 0px var(--color-blue2); */
 }
