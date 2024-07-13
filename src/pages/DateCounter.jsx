@@ -3,6 +3,8 @@ import { useState } from "react";
 function DateCounter() {
   const [step, setStep] = useState(1);
   const [count, setCount] = useState(0);
+  const date = new Date();
+  date.setDate(date.getDate() + count);
 
   function handleStepPrev() {
     if (step > 1) setStep((s) => s - 1);
@@ -13,7 +15,7 @@ function DateCounter() {
   }
 
   function handleCountPrev() {
-    if (count > 1) setCount((c) => c - 1);
+    setCount((c) => c - 1);
   }
 
   function handleCountNext() {
@@ -41,7 +43,16 @@ function DateCounter() {
           +
         </button>
       </div>
-      <p>Today is ...</p>
+      <div className="msg">
+        <span>
+          {count === 0
+            ? "Today is "
+            : count > 0
+            ? `${count} days from today is `
+            : `${Math.abs(count)} days ago was `}
+        </span>
+        <span>{date.toDateString()}</span>
+      </div>
     </div>
   );
 }
