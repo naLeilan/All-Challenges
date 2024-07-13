@@ -15,11 +15,11 @@ function DateCounter() {
   }
 
   function handleCountPrev() {
-    setCount((c) => c - 1);
+    setCount((c) => c - step);
   }
 
   function handleCountNext() {
-    setCount((c) => c + 1);
+    setCount((c) => c + step);
   }
 
   return (
@@ -27,20 +27,20 @@ function DateCounter() {
       <h4>Date Counter</h4>
       <div className="step">
         <button className="btn" onClick={handleStepPrev}>
-          -
+          &#45;
         </button>
         <p>Step:{step} </p>
         <button className="btn" onClick={handleStepNext}>
-          +
+          &#43;
         </button>
       </div>
       <div className="count">
         <button className="btn" onClick={handleCountPrev}>
-          -
+          &#45;
         </button>
         <p>Count:{count} </p>
         <button className="btn" onClick={handleCountNext}>
-          +
+          &#43;
         </button>
       </div>
       <div className="msg">
