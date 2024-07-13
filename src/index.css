@@ -11,7 +11,8 @@
   --color-dark2: #242323;
   --color-yelow1: #facc15;
   --color-blue1: #747bff;
-  --color-blu22: #a7abfa;
+  --color-blue2: #a7abfa;
+  --color-blue3: #4e5072;
 
   --dark-gray: #a9a9a9;
   --light-gray: #d3d3d3;
@@ -41,14 +42,38 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
   justify-content: space-between;
 }
 
-.app {
+.app,
+.stepslider {
   display: flex;
   flex-direction: column;
-  background-color: var(--color-dark);
+  background-color: var(--color-dark1);
   padding: 1rem;
+}
+
+.stepslider {
+  width: 550px;
+  border-radius: 10px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stepslider-num {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.stepslider-msg {
+  font-size: 1.3rem;
+  color: var(--dark-gray);
 }
 
 h2 {
@@ -65,5 +90,25 @@ h2 {
 a {
   text-decoration: none;
   padding: 0.5rem;
-  /* border: 1px solid var(--color-blu22); */
+  /* border: 1px solid var(--color-blue2); */
+}
+
+.stepslider-btn {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.btn {
+  width: 130px;
+  height: 50px;
+  background-color: var(--color-blue1);
+  border-radius: 10px;
+  border: none;
+  transition: all 0.3s;
+  margin: 0 5px;
+}
+
+.btn:hover {
+  background-color: var(--color-blue3);
 }

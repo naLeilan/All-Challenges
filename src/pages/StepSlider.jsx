@@ -4,18 +4,18 @@ function StepSlider() {
   const step = 1;
 
   return (
-    <div className="app">
-      <div className="num">
+    <div className="stepslider">
+      <div className="stepslider-num">
         <p>1</p>
         <p>2</p>
         <p>3</p>
       </div>
-      <div className="msg">
+      <div className="stepslider-msg">
         Step {step} is : {msg[step - 1]}
       </div>
-      <div className="btn">
-        <button>Prev</button>
-        <button>Next</button>
+      <div className="stepslider-btn">
+        <button className="btn">Prev</button>
+        <button className="btn">Next</button>
       </div>
     </div>
   );
