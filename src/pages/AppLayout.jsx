@@ -9,6 +9,7 @@ function AppLayout() {
         <Link to="/animals">Animal List</Link>
         <Link to="/packing">Packing List</Link>
         <Link to="/datecounter">Date Counter</Link>
+        <Link to="/backgroundcolor">Change Background Color</Link>
         <Link to="/tests">Tests</Link>
       </div>
     </div>
