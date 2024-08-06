@@ -3,9 +3,10 @@ import AppLayout from "./pages/AppLayout";
 import StepSlider from "./pages/StepSlider";
 import AnimalsList from "./pages/Animals";
 import PackingList from "./pages/PackingList";
-import Tests from "./pages/Tests";
 import DateCounter from "./pages/DateCounter";
 import BachgroundColor from "./pages/BachgroundColor";
+import LinearSearch from "./pages/LinearSearch";
+import BinarySearch from "./pages/BinarySearch";
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
         <Route path="animals" element={<AnimalsList />} />
         <Route path="packing" element={<PackingList />} />
         <Route path="backgroundcolor" element={<BachgroundColor />} />
-        <Route path="tests" element={<Tests />} />
         <Route path="datecounter" element={<DateCounter />} />
+        <Route path="linearsearch" element={<LinearSearch />} />
+        <Route path="binarysearch" element={<BinarySearch />} />
       </Routes>
     </BrowserRouter>
   );

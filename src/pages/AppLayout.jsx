@@ -10,7 +10,9 @@ function AppLayout() {
         <Link to="/packing">Packing List</Link>
         <Link to="/datecounter">Date Counter</Link>
         <Link to="/backgroundcolor">Change Background Color</Link>
-        <Link to="/tests">Tests</Link>
+        <Link to="./linearsearch">Linear Search in js</Link>
+        <Link to="/binarysearch">Binary Search</Link>
+        {/* <Link to="/tests">Tests</Link> */}
       </div>
     </div>
   );
